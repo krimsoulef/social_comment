@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+body{
+    margin:20px 1px;
+    font-family: "League Spartan";
+    font-size: 11px;
+    background-color:white;
+    width: 100vw;
+    height: 30vh;
+
+    
+}
+
+.grid-container{
+    display: grid;
+   
+    gap: 2px 0px;
+    padding: 20px;
+    margin: 0%;
+    border: 10px solid hsl(309, 56%, 43%);
+    grid-template:repeat(3,1fr)/repeat(3,1fr);
+    grid-template-areas: 
+    "first . second"
+    ". . ."
+    "colton irene anne";
+
+}
+
+.first{
+    grid-area: first;
+    border: 30px solid hsl(158, 56%, 48%);
+    color:blueviolet;
+    height: 180% 
+    width: 130% 
+    letter-spacing: 5px;
+ }
+ .first h1{
+    color: hsl(300, 43%, 33%);
+    font-size: 10rem;
+    font-weight: bold;
+}
+.first p{
+    color: hsl(300, 43%, 33%);
+    font-size: 5rem;
+
+}
+
+.seconde{
+    grid-area: second;
+    border: 10px solid hsl(0, 68%, 41%);
+    /* width:120%; */
+    justify-self: end;
+   
+}
+.colton{
+    grid-area: colton;
+    color: white;
+    background:  hsl(302, 40%, 25%);
+    border-radius: 5%;
+    margin-bottom: 40%;
+    margin-top: 10%;
+    font-size: 2rem;
+    padding: 10% 10%;
+    margin-right: 10%;
+    display: flex;
+    flex-direction: column;
+}
+.irene{
+    grid-area: irene;
+    margin-bottom: 30%;
+    margin-top: 25%;
+    background: hsl(302, 40%, 25%);
+    border-radius: 5%;
+    color: white;
+    font-size: 2rem;
+    margin-right: 10%;
+    padding: 10% 10%;
+}
+.anne{
+    grid-area:anne;
+    margin-bottom: 20%;
+    margin-top: 40%;
+    background: hsl(302, 40%, 25%);
+    border-radius: 5%;
+    color: white;
+    font-size: 2rem;
+    padding: 10% 10%;
+}
+.violet{
+    color:hsl(333, 80%, 67%);
+}
+img{
+    border-radius: 100%;
+}
+
+.seconde p{
+    background-color: hsl(302, 57%, 88%);
+    font-size: 30px;
+    color:hsl(300, 43%, 22%);
+    border-radius: 5%;
+}
+
+.stara{
+    display:flex;
+    flex-direction:row;
+    background-color: hsl(302, 57%, 88%);
+    font-size: 30px;
+    font-weight: bold;
+    color:hsl(300, 43%, 22%);
+    border-radius: 15%;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    margin-right: 15%;
+    height: 100px;
+}
+.starb{
+    display:flex;
+    flex-direction:row;
+    background-color: hsl(302, 57%, 88%);
+    font-size: 30px;
+    font-weight: bold;
+    color:hsl(300, 43%, 22%);
+    border-radius: 15%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 15%;
+    margin-right: 10%;
+    height: 100px;
+}
+
+.starc{
+    display:flex;
+    flex-direction:row;
+    background-color: hsl(302, 57%, 88%);
+    font-size: 30px;
+    font-weight: bold;
+    color:hsl(300, 43%, 22%);
+    border-radius: 15%;
+    align-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    height: 100px;
+}
+
+.checked{
+    color:rgb(234, 183, 87);
+    
+}
+@media (max-width:400px){/*<onapplique toutes les régles écrites ici quand l'écran<512pixels*/
+   
+    .grid-container{
+        flex-direction:column;
+        margin: 0 20px;
+     }
+     .first{
+        margin-bottom: 50px;
+     }
+     .colton{
+        margin-top: 50px;
+     }
+        
+
+}
+
+
+
+
+    
